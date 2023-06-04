@@ -17,12 +17,12 @@ export const Register = (props) => {
             <label htmlFor="name">Nombre Completo</label>
             <input value={name} name="name" onChange={(e) => setName(e.target.value)} id="name" placeholder="Nombre Completo" />
             <label htmlFor="email">email</label>
-            <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
+            <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="túemail@gmail.com" id="email" name="email" />
             <label htmlFor="password">password</label>
             <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
             <button type="submit">Log In</button>
         </form>
-        <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Already have an account? Login here.</button>
+        <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Ya tienes cuenta? Login aquí.</button>
     </div>
     )
 }
