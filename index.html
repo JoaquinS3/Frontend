@@ -8,35 +8,35 @@
     <!-- Fontawesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Bootswatch Darkly Theme -->
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/yeti/bootstrap.min.css" rel="stylesheet" />
     <title>To-Do</title>
 </head>
 
 <body>
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">To-Do</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <a class="navbar-brand text-light" href="#">To-Do</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link text-light" href="#">
             Inicio <span class="sr-only">(current)</span>
           </a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0" id="filters">
-        <label class="font-weight-bold text-info mr-3">Filtro</label>
+        <label class="font-weight-bold text-light text-info mr-3">Filtro</label>
         <input type="radio" name="type" value="all" class="mx-1">
-        <label for="male" class="mb-0">Todo</label>
+        <label for="male" class="mb-0 text-light">Todo</label>
         <input type="radio" name="type" value="completed" class="mx-1">
-        <label for="female" class="mb-0">Completadas</label>
+        <label for="female" class="mb-0 text-light">Completadas</label>
         <input type="radio" name="type" value="uncompleted" class="mx-1">
-        <label for="other" class="mr-2 mb-0">Incompleto</label> 
+        <label for="other" class="mr-2 mb-0 text-light">Incompleto</label> 
         <input
           class="form-control mr-sm-2"
           type="search"
@@ -44,7 +44,7 @@
           placeholder="Tarea a buscar"
           aria-label="Search"
         >
-        <button class="btn btn-outline-info my-2 my-sm-0" type="submit" id="search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="search">
           Buscar
         </button>
       </form> 
@@ -173,7 +173,7 @@
     <!-- Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <!-- JS Code -->
-    <script src="./JS/index.js" type="module"></script>
+    <script src="./Aplicacion ToDo/JS/index.js" type="module"></script>
 </body>
 
 </html>
